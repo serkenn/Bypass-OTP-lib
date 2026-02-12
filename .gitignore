@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Environment
+.env
+
+# Android SDK (not part of PyPI package)
+build-tools/
+platforms/
+platform-tools/
+licenses/
+
+# Android build artifacts
+android/.gradle/
+android/app/build/
+android/local.properties

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Bypass-OTP-lib"
+version = "0.1.0"
+description = "Android +Message OTP relay client — grab SMS verification codes over Wi-Fi"
+readme = "README.md"
+license = "Unlicense"
+requires-python = ">=3.10"
+authors = [{ name = "serken" }]
+keywords = ["otp", "sms", "android", "plus-message", "automation", "2fa"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Networking",
+    "Typing :: Typed",
+]
+dependencies = ["requests>=2.28"]
+
+[project.urls]
+Homepage = "https://github.com/serkenn/Bypass-OTP-lib"
+Repository = "https://github.com/serkenn/Bypass-OTP-lib"
+Issues = "https://github.com/serkenn/Bypass-OTP-lib/issues"
+
+[project.scripts]
+plusmsg-otp-watcher = "plusmsg_otp.watcher:main"
+
+[tool.setuptools.packages.find]
+include = ["plusmsg_otp*"]
+
+[tool.setuptools.package-data]
+plusmsg_otp = ["py.typed"]
